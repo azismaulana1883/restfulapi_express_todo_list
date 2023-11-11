@@ -1,26 +1,23 @@
 {
   "development": {
-    "username": "cghfkbes_azism1880",
-    "password": "@Noapwg2321",
+    "username": "cghfkbes_azism145",
+    "password": "@Another2321",
     "database": "cghfkbes_skilvul_todo",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port" : "3306"
+    "dialect": "mysql"
   },
   "test": {
-    "username": "cghfkbes_azism1880",
-    "password": "@Noapwg2321",
+    "username": "cghfkbes_azism145",
+    "password": "@Another2321",
     "database": "cghfkbes_skilvul_todo",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port" : "3306"
+    "dialect": "mysql"
   },
   "production": {
-    "username": "cghfkbes_azism1880",
-    "password": "@Noapwg2321",
+    "username": "cghfkbes_azism145",
+    "password": "@Another2321",
     "database": "cghfkbes_skilvul_todo",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port" : "3306"
+    "dialect": "mysql"
   }
 }
