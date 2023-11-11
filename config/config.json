@@ -3,7 +3,7 @@
     "username": "cghfkbes_azism145",
     "password": "@Another2321",
     "database": "cghfkbes_skilvul_todo",
-    "host": "https://cs10.koneksiaman.net",
+    "host": "cs10.koneksiaman.net",
     "port" : 2083,
     "dialect": "mysql"
   },
