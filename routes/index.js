@@ -9,13 +9,15 @@ router.get('/', (req, res, next) => {
 // Auth Routes
 const Auth = require('./auth/index')
 router.use('/auth', Auth)
-// Todo Routes
 
+const {verifyToken,verifyJWTToken} = require('../middleware/JWT')
+
+// Todo Routes
 const Todo = require('./todo/index')
-router.use('/todo', Todo)
+router.use('/todo',[verifyToken,verifyJWTToken], Todo)
 
 // User Routes
 const User = require('./user/index')
-router.use('/user', User)
+router.use('/user',[verifyToken,verifyJWTToken], User)
 
 module.exports=router
