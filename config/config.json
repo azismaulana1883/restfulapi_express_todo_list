@@ -4,6 +4,7 @@
     "password": "@Another2321",
     "database": "cghfkbes_skilvul_todo",
     "host": "https://cs10.koneksiaman.net",
+    "port" : 2083,
     "dialect": "mysql"
   },
   "test": {
