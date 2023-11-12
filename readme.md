@@ -2,6 +2,8 @@
 
 API ini menyediakan layanan untuk membuat, membaca, mengubah, dan menghapus (CRUD) daftar tugas (todo list). Dengan menggunakan API ini, pengguna dapat dengan mudah mengelola aktivitas sehari-hari mereka dan menyusun daftar tugas sesuai kebutuhan.
 
+URL : "https://pear-successful-mackerel.cyclic.app"
+
 ## Daftar Fitur
 
 1. **Membuat Todo Baru**
