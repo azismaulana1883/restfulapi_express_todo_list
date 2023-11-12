@@ -55,21 +55,25 @@ Jika Anda ingin berkontribusi pada pengembangan proyek ini, silakan buka _issue_
 POST /api/v1/auth/register
 Content-Type: application/json
 
+````
 {
   "nama" : "Angga Pratama",
   "username" : "angga14",
   "password" : "belajar1"
 }
+````
 
 2. Login User
 
 POST /api/v1/auth/login
 Content-Type: application/json
 
+````
 {
   "username" : "angga14",
   "password" : "belajar1"
 }
+````
 
 3. Membuat Todo Baru
 
@@ -77,10 +81,12 @@ POST /api/v1/todo
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
+````
 {
   "title" : "Membuat express js restful Api",
   "status" : "Complete"
 }
+````
 
 4. Menampilkan semua Todo
 
@@ -126,6 +132,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+````
 {
   "message": "Successfull to login user!",
   "statusText": "Successfull to login user!",
@@ -138,22 +145,26 @@ Content-Type: application/json
     "id": 14
   }
 }
+````
 
 3. Membuat Todo Baru
 
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "message": "Successfull to create data Todo!",
   "statusText": "Successfull to create data Todo!",
   "statusCode": 200
 }
+````
 
 4. Menampilkan semua Todo
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "message": "Here your data Todo",
   "statusText": "Here your data Todo",
@@ -169,11 +180,13 @@ Content-Type: application/json
     }
   ]
 }
+````
 
 5. Menampilkan detail Todo
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "id": 69,
   "title": "Membuat express js restful Api",
@@ -182,32 +195,39 @@ Content-Type: application/json
   "createdAt": "2023-11-11T04:08:42.000Z",
   "updatedAt": "2023-11-11T04:08:42.000Z"
 }
+````
 
 6. Mengupdate Todo
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "message": "Todo updated successfully",
   "statusCode": 200
 }
+````
 
 7. Menghapus Todo
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "message": "Todo deleted successfully",
   "statusCode": 200
 }
+````
 
 8. Menghapus user sesuai user yang sedang login
 HTTP/1.1 200 Ok
 Content-Type: application/json
 
+````
 {
   "message": "All Delete Complete",
   "statusText": "All Data Has Been Deleted",
   "statusCode": 200
 }
+````
 
