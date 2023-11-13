@@ -8,7 +8,11 @@ app.use(morgan('dev'))
 app.use(cors())
 
 app.get('/', (req,res) => {
-    res.send('hello world')
+    res.send({
+        message : "Succes You Are in Main Routing",
+        StatusText : "Success",
+        StatusCode : 200
+    })
 })
 
 app.use(express.json())

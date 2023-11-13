@@ -3,7 +3,11 @@ const router = express.Router();
 
 // Main Routing
 router.get('/', (req, res, next) => {
-    res.send('Welcome to main routing');
+    res.send({
+        message : "success you are on api/v1",
+        statusText : "Success",
+        statusCode : 200
+    });
 });
 
 // Auth Routes
