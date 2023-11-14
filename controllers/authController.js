@@ -64,7 +64,8 @@ async function Login(req, res, next) {
         if ( req.body.password !== passwordUser ) {
             res.status(400).send({
                 message: 'Username or Password is wrong!',
-                statusCode: 400
+                statusCode: 400,
+                success: false
             })
         } else {
             let expiredToken = Math.floor(Date.now() / 1000) + (60 * 60)
