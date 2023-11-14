@@ -89,6 +89,7 @@ async function Login(req, res, next) {
                 message: 'Successfull to login user!',
                 statusText: 'Successfull to login user!',
                 statusCode: 200,
+                success: true,
                 data: dataPassingClient
             })
         }
