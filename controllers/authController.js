@@ -32,12 +32,14 @@ async function Register(req, res, next) {
             if (!createdData.dataValues) {
                 res.status(400).send({
                     message: 'Wrong username or password',
+                    statusText: 'Failed to login user!',     
                     statusCode: 400
                 });
             } else {
-                res.send({
-                    message: 'Success',
-                    statusCode: 200
+                res.status(201).send({
+                    message: 'Success to create data',
+                    statusText: 'Failed to login user!',               
+                    statusCode: 201
                 });
             }
         }
@@ -57,13 +59,15 @@ async function Login(req, res, next) {
     if ( !getUsers ) {
         res.status(400).send({
             message: 'Data is not exist!',
+            statusText: 'Failed to login user!',
             statusCode: 400
         })
     } else {
         let passwordUser = cryptr.decrypt(getUsers.dataValues.password)
         if ( req.body.password !== passwordUser ) {
             res.status(400).send({
-                message: 'Username or Password is wrong!',
+                message: 'Failed to login user!',
+                statusText: 'Failed to login user!',
                 statusCode: 400,
                 success: false
             })
