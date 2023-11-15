@@ -31,8 +31,8 @@ async function Register(req, res, next) {
     
             if (!createdData.dataValues) {
                 res.status(400).send({
-                    message: 'Wrong username or password',
-                    statusText: 'Failed to login user!',     
+                    message: 'Failed to register',
+                    statusText: 'Failed to register!',     
                     statusCode: 400
                 });
             } else {
