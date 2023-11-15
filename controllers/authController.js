@@ -38,7 +38,7 @@ async function Register(req, res, next) {
             } else {
                 res.status(201).send({
                     message: 'Success to create data',
-                    statusText: 'Failed to login user!',               
+                    statusText: 'Successfully to create a new users',               
                     statusCode: 201
                 });
             }
